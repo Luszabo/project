@@ -1,5 +1,5 @@
 <?php
-defined('basepath') or exit('no direct script access allowed')
+defined('BASEPATH') or exit('no direct script access allowed');
 
 class Home extends CI_Controller {
     public function index()
@@ -11,4 +11,5 @@ class Home extends CI_Controller {
 
 
     }
+
 }
