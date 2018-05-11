@@ -29,6 +29,9 @@ class Home extends CI_Controller {
         $this->load->view('prax/home' , $data);
         $this->load->view('template/tabulka' ,$data2);
         $this->load->view('template/tabulka2' ,$data3);
+
+
+
         $this->load->view('template/tabulka3' ,$data4);
         $this->load->view('template/tabulka4' ,$data5);
 
@@ -37,10 +40,17 @@ class Home extends CI_Controller {
 
     }
 
-    public function submit()
+    public function add_user()
     {
-        $result = $this->m->submit();
-        redirect(base_url('prax/home'));
-
+        $meno = $this->input->post('meno');
+        $profesia = $this->input->post('profesia');
+        $data7 = array('meno'=>$meno,'profesia'=>$profesia);
+        $this->load->model('main_model');
+        if ($this->Add_users->add($data7))
+        {
+            echo "success";
+        }else{
+            echo "fail";
+        }
     }
 }

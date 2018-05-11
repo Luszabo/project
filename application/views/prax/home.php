@@ -6,7 +6,7 @@
     <p></p>
 
     <h3>Zoznam firiem</h3>
-    <form action="<?php echo base_url('prax/submit') ?>" method="post" class="form-horizontal">
+    <form action="<?php echo base_url('Home/add_user1') ?>" method="post" class="form-horizontal">
         <div class="form-group">
 
             <div class="col-md-10">

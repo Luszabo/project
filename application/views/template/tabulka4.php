@@ -1,5 +1,5 @@
 <h3>Tabuľka Záznamov</h3>
-<form action="<?php echo base_url('prax/submit') ?>" method="post" class="form-horizontal">
+<form action="<?php echo base_url('Home/add_user4') ?>" method="post" class="form-horizontal">
     <div class="form-group">
         <label for="title" class="col-md-2"></label>
         <div class="col-md-10">

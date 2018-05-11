@@ -66,18 +66,7 @@ class main_model extends CI_Model{
 
 
 
-    public function submit(){
-        $field = array(
-            'nazov'=>$this->input->post('txt_meno'),
-            'nazov'=>$this->input->post('txt_profesia'),
-            );
-        $this->db->insert('instruktor', $field);
-        if($this->db->affected_rows() > 0){
-            return true;
-        }else{
-            return false;
-        }
-    }
+
 
 
 }

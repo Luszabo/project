@@ -1,17 +1,17 @@
 <h3>Tabulka inštruktorov</h3>
-<form action="<?php echo base_url('prax/submit') ?>" method="post" class="form-horizontal">
+<form action="<?php echo base_url('Home/add_user') ?>" method="post" class="form-horizontal">
     <div class="form-group">
 
         <div class="col-md-10">
-            <input type="text" name="txt_title" class="form-control" value="vložiť meno inštruktora">
-            <input type="text" name="txt_title" class="form-control" value="vložiť názov profesie">
+            <input type="text" name="meno" class="form-control" value="vložiť meno inštruktora">
+            <input type="text" name="profesia" class="form-control" value="vložiť názov profesie">
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-md-2"></label>
         <div class="col-md-10">
-            <input type="submit" name="btnSave" class="btn btn-primary" value="Uložiť">
+            <input type="submit" name="add" class="btn btn-primary" value="Uložiť">
         </div>
     </div>
 
